@@ -56,7 +56,7 @@ StarTracker
 ------------
 * `SITCOMTN 064`_ Startracker: star trails-centre finder
 .. _SITCOMTN 064: https://sitcomtn-064.lsst.io
-* `SITCOMTN 071`_ The current pinting pointig model devloped for TMA uses the narrow camera. The offset from the narrow camera to the fast camera is calculated and verified, such that when the TMA is pointed at an object, it will be positioned at the boresight of the narrow camera, and then introduce a known offset to put the object in the field of view of the narrow camera.
+* `SITCOMTN 071`_ The current pinting pointig model devloped for TMA uses the narrow camera. The offset from the narrow camera to the fast camera is calculated and verified, such that when the TMA is pointed at an object, it will be positioned at the boresight of the narrow camera, and then introduce a known offset to put the object in the field of view of the narrow camera. It was found that to center the object in the fast camera, we should slew to the object and then apply the following command: mtcs.offset_azel(az=-208, el=508). However, it was also found empirically on multiple nights that the sign of the az offset was incorrect, and the command mtcs.offset_azel(az=208, el=508) successfully put the object in the fast camera field of view, although not always centered.
 .. _SITCOMTN 071: https://sitcomtn-071.lsst.io
 
 Others
@@ -80,7 +80,7 @@ Index of analyses in progress
 .. _SITCOM_708: https://jira.lsstcorp.org/browse/SITCOM-708
 .. _SITCOM_1173: https://jira.lsstcorp.org/browse/SITCOM-1173
 
-Related docunents
+Related documents
 ================
 
 For all the tests, the requirements for TMA are extracted from <link>
