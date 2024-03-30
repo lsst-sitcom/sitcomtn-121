@@ -22,19 +22,16 @@ TMA Performance Analysis
 
 Pointing verification
 ---------------------
-* The current pointing model gives an error ~ 10 arcsec (still in development)
-* Based on data limited to two nights, variation was presented in relative pointing for RA -- in both forward- and backward-commanded pointing -- spanning the range of -100< :math:`{\Delta}RA` < 100 arcsec.
-..
-   However, , more data is required for reproducibality.
 
+* The current pointing model gives an error ~ 10 arcsec (still in development)
+
+* Based on data limited to two nights, variation was presented in relative pointing for RA -- in both forward- and backward-commanded pointing -- spanning the range of -100< :math:`{\Delta}RA` < 100 arcsec.
 
 * `SITCOMTN 077`_ The drift during tracking was analysed on data of 1 night and was observed to be of order of :math:`10^{-4}`  arcsec for both RA and Dec. The average drift velocities  for both RA and Dec were similar in magnitude but different in directions. The average angular drift velocity (0.6 arcsec/min) is within 1sigma of the expected. Hence, from this dataset we conclude a drift behavior of the tracking within normal expectations.
-..
-   However, data from multiple nights would required for a conclusive reproducible quantifications.
 
 .. _SITCOMTN 077: https://sitcomtn-077.lsst.io
 
-* `SITCOMTN 063`_, `SITCOMTN 065`_ Under a 3.5 degree random offset, it was clear that the pointing model (for a test position set 1039 to 1071) progressively degraded with time with an average offset rate of 0.55 arcsec /min. Correcting for this rate, we get an on-sky precision (1 sigma) of 0.3 for RA and 0.21 arcsec for Declination. This is close enough to the required 0.2 arcsec precision.
+* `SITCOMTN 063`_, `SITCOMTN 065`_ Under a 3.5 degree random offset, it was clear that the pointing model (for a test position set 1039 to 1071) progressively degraded with time with an average offset rate of 0.55 arcsec /min. Correcting for this rate, we get an on-sky precision (1 :math:`{\sigma}`) of 0.3 arcsec for RA and 0.21 arcsec for Dec. This is close enough to the required 0.2 arcsec precision.
 .. _SITCOMTN 063: https://sitcomtn-063.lsst.io
 .. _SITCOMTN 065: https://sitcomtn-065.lsst.io
 
@@ -84,29 +81,3 @@ Related documents
 ================
 
 For all the tests, the requirements for TMA are extracted from <link>
-
-
-..
-   The following table sumamrises the performance analysis of the TMA from the existing (and on-going) testing.
-
-..
-   .. list-table::
-   :widths: 25 40 90
-   :header-rows: 1
-
-   * - Technotes
-     - Test
-     - Summary conclusions
-
-   * - Row 1, column 1
-     -
-     - Row 1, column 3
-
-   * - Row 2, column 1
-     - Row 2, column 2
-     - Row 2, column 3
-
-================
-
-..
-   See the `Documenteer documentation <https://documenteer.lsst.io/technotes/index.html>`_ for tips on how to write and configure your new technote.
