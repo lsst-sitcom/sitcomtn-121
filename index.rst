@@ -27,7 +27,7 @@ Index of tests and verification
    :header-rows: 1
 
    * - Data taken on
-     - Anlaysis finalised on
+     - Analysis finalised on
      - Results presented in
    * -
        | 26 January 2023
@@ -91,6 +91,12 @@ Index of tests and verification
      - |
      - :ref:`SITCOMTN-110 <Pending verifications>`
 
+   * -
+       | 23 November 2023
+       | 21 April 2024
+     - | 15 May 2024       
+     - :ref:`SITCOMTN-112 <Pending verifications>`
+
 
 Pointing verification
 ------------------------
@@ -131,6 +137,10 @@ TMA jitter verification
 
 .. _SITCOMTN-057: https://sitcomtn-057.lsst.io
 
+* `SITCOMTN-112`_ This analyzes the TMA jitter and slew and settle performance over a range of dates.  Over 91% of the slews meet the <0.01 arcsecond jitter specification.  Many of the ones that don't meet the specification are caused by deficiencies in the way we archive the data, not by true jitter failures.
+
+  .. _SITCOMTN-112: https://sitcomtn-112.lsst.io
+
 Slew and settle verification
 ----------------------------
 .. _Slew and settle verification:
@@ -141,7 +151,10 @@ Slew and settle verification
 .. _SITCOMTN-067: https://sitcomtn-067.lsst.io
 .. _SITCOMTN-068: https://sitcomtn-068.lsst.io
 
+* `SITCOMTN-112`_ This analyzes the TMA jitter and slew and settle performance over a range of dates.  95% of the slews less than 3.5 degrees meet the 4 second specificatuon.
 
+  .. _SITCOMTN-112: https://sitcomtn-112.lsst.io
+  
 StarTracker
 ------------
 .. _StarTracker:
